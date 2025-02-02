@@ -23,13 +23,13 @@ local tbl =
 							data = 
 							{
 								name = "",
-								uuid = "65fbc112-57d8-f356-8e79-80940665bc59",
+								uuid = "d4b8291b-0480-7e7d-b454-d5179225d058",
 								version = 2.1,
 							},
 							inheritedObjectUUID = "bdd2bbc8-bd74-06ee-825b-d7a7a91e5f14",
 							inheritedOverwrites = 
 							{
-								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 22 -- 钐镰客\ndata.TopJobOrder[22] = 26 --龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 3 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
+								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 22 -- 钐镰客\ndata.TopJobOrder[22] = 26 --龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 50 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
 							},
 						},
 					},
@@ -354,6 +354,56 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ca1767dc-cc38-4a09-bc93-b4c88b699028",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_HoldHammer",
+							uuid = "f91d8601-1f45-e24f-b0c1-82b9ba21b73d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34680,
+							name = "hammer3",
+							uuid = "ca1767dc-cc38-4a09-bc93-b4c88b699028",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 3.4,
+				name = "hammer off",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 25,
+				uuid = "5ffbec86-97a6-cf12-b0b4-85245f49a36c",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 7561,
 							atomicPriority = true,
 							conditions = 
@@ -592,7 +642,163 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 34674,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"da5caf32-47dc-f72f-ac2c-65007296a9dc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							uuid = "cdc32dca-3147-cf67-8ce4-f0452501a9a1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34678,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"972ec562-3645-fc8a-89ea-4eec9dc134df",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "91f4fc71-35d1-7f93-92e9-71bf49221756",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34679,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"ccd62627-4026-7100-8f51-f537e2dc146f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "d1809dd0-04ff-07cb-960c-6d6b8f031f78",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34680,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"87d3b5bd-0e04-88b7-b633-4d5348fed097",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "f15dafc8-522f-828b-8e61-60c96d7dc584",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 60,
+							actionID = 34674,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "hammer cd <= 60",
+							uuid = "da5caf32-47dc-f72f-ac2c-65007296a9dc",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 3)",
+							name = "hammer buff 3",
+							uuid = "972ec562-3645-fc8a-89ea-4eec9dc134df",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 2)",
+							name = "hammer buff 2",
+							uuid = "ccd62627-4026-7100-8f51-f537e2dc146f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 1)",
+							name = "hammer buff 1",
+							uuid = "87d3b5bd-0e04-88b7-b633-4d5348fed097",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 56.1,
+				name = "burn hammer",
+				timeRange = true,
+				timelineIndex = 13,
+				timerEndOffset = 13.10000038147,
+				uuid = "4812813a-6f32-d15a-bca9-239b8ba60761",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 34664,
+							conditions = 
+							{
+								
+								{
+									"bb76c21f-9617-938e-a686-35bd2a7697fe",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "fb40a76a-db16-22d0-88eb-440848555bf7",
 							version = 2.1,
@@ -601,10 +807,24 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3680,
+							category = "Self",
+							name = "no hammer",
+							uuid = "bb76c21f-9617-938e-a686-35bd2a7697fe",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 56.1,
 				name = "animal motif 1",
+				timeRange = true,
 				timelineIndex = 13,
+				timerEndOffset = 13.10000038147,
 				uuid = "d6660b53-e156-f923-a2cf-8c44f5e9c591",
 				version = 2,
 			},
@@ -738,10 +958,44 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldHammer",
+							gVarValue = 2,
+							uuid = "99834c1c-5b47-6b3d-8fd1-4c82dfe85fc3",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 75.3,
+				name = "hammer on",
+				timelineIndex = 16,
+				uuid = "ceb2a43c-9f98-7cd3-ad6a-f898d4800ee3",
+				version = 2,
+			},
+			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 7561,
 							atomicPriority = true,
 							conditions = 
 							{
+								
+								{
+									"b7861c7c-c47d-f92f-a7d6-6f9122a77079",
+									true,
+								},
 								
 								{
 									"a6877f0b-9a6d-e965-8134-10966ef98dc5",
@@ -776,6 +1030,19 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3680,
+							category = "Self",
+							name = "no hammer",
+							uuid = "b7861c7c-c47d-f92f-a7d6-6f9122a77079",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
 					
 					{
 						data = 
@@ -1689,6 +1956,14 @@ local tbl =
 						{
 							actionID = 7561,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"b235a8de-f497-78dd-a09d-452050df8912",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "e10d1d58-5d1b-3a6f-9853-934aec945789",
 							version = 2.1,
@@ -1697,11 +1972,24 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							actionID = 7561,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "swiftcast cd == 0",
+							uuid = "b235a8de-f497-78dd-a09d-452050df8912",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 233.9,
 				name = "swiftcast",
 				timelineIndex = 36,
-				timerOffset = -2.5,
+				timerOffset = -3,
 				uuid = "fd69e5e4-a2cd-4966-bfde-d744701b9551",
 				version = 2,
 			},
@@ -4738,7 +5026,7 @@ local tbl =
 				mechanicTime = 743,
 				name = "swiftcast",
 				timelineIndex = 131,
-				timerOffset = -2.5,
+				timerOffset = -3,
 				uuid = "47ccd6af-e440-7952-bd5b-968c2e03f558",
 				version = 2,
 			},
@@ -4828,37 +5116,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedObjectUUID = "408750a7-7093-47e9-8bdd-98b2f02684db",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-	},
-	[144] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "Lock Face",
-				uuid = "34162ed4-eff3-a5d8-a74f-36ae74103faa",
-				version = 2,
-			},
-			inheritedObjectUUID = "62e02fbc-ae37-3b23-aacf-18cfd3d80f40",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-		
-		{
-			data = 
-			{
-				name = "Lock Face off",
-				uuid = "7afefd21-f6aa-36fa-a424-0eb643b7ddf6",
-				version = 2,
-			},
-			inheritedObjectUUID = "b2b06b6a-e083-13d5-ba1d-32d87958dd6e",
 			inheritedOverwrites = 
 			{
 				enabled = false,
