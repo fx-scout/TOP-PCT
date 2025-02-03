@@ -29,7 +29,7 @@ local tbl =
 							inheritedObjectUUID = "bdd2bbc8-bd74-06ee-825b-d7a7a91e5f14",
 							inheritedOverwrites = 
 							{
-								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 22 -- 钐镰客\ndata.TopJobOrder[22] = 26 --龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 50 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
+								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 22 -- 钐镰客\ndata.TopJobOrder[22] = 26 -- 龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 3 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
 							},
 						},
 					},
@@ -642,46 +642,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 34674,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"da5caf32-47dc-f72f-ac2c-65007296a9dc",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							uuid = "cdc32dca-3147-cf67-8ce4-f0452501a9a1",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							actionID = 34678,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"972ec562-3645-fc8a-89ea-4eec9dc134df",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							targetType = "Current Target",
-							uuid = "91f4fc71-35d1-7f93-92e9-71bf49221756",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
 							actionID = 34679,
 							atomicPriority = true,
 							conditions = 
@@ -721,32 +681,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 60,
-							actionID = 34674,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "hammer cd <= 60",
-							uuid = "da5caf32-47dc-f72f-ac2c-65007296a9dc",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 3)",
-							name = "hammer buff 3",
-							uuid = "972ec562-3645-fc8a-89ea-4eec9dc134df",
-							version = 2,
-						},
-					},
 					
 					{
 						data = 
@@ -4583,6 +4517,121 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				enabled = false,
+			},
+		},
+	},
+	[119] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 34678,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"972ec562-3645-fc8a-89ea-4eec9dc134df",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "91f4fc71-35d1-7f93-92e9-71bf49221756",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34679,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"ccd62627-4026-7100-8f51-f537e2dc146f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "d1809dd0-04ff-07cb-960c-6d6b8f031f78",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34680,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"87d3b5bd-0e04-88b7-b633-4d5348fed097",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "f15dafc8-522f-828b-8e61-60c96d7dc584",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 3)",
+							name = "hammer buff 3",
+							uuid = "972ec562-3645-fc8a-89ea-4eec9dc134df",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 2)",
+							name = "hammer buff 2",
+							uuid = "ccd62627-4026-7100-8f51-f537e2dc146f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 1)",
+							name = "hammer buff 1",
+							uuid = "87d3b5bd-0e04-88b7-b633-4d5348fed097",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 650.6,
+				name = "burn hammer",
+				timeRange = true,
+				timelineIndex = 119,
+				timerEndOffset = 11,
+				uuid = "28085fcd-9a9f-9550-ba20-05060b2acacd",
+				version = 2,
 			},
 		},
 	},
