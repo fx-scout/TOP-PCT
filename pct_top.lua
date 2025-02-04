@@ -1888,57 +1888,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 7561,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"b235a8de-f497-78dd-a09d-452050df8912",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							uuid = "e10d1d58-5d1b-3a6f-9853-934aec945789",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7561,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "swiftcast cd == 0",
-							uuid = "b235a8de-f497-78dd-a09d-452050df8912",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 233.9,
-				name = "swiftcast",
-				timelineIndex = 36,
-				timerOffset = -3,
-				uuid = "fd69e5e4-a2cd-4966-bfde-d744701b9551",
-				version = 2,
-			},
-			inheritedIndex = 14,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							gVar = "ACR_RikuPCT3_Motifs",
 							uuid = "6dde014c-f1f6-25af-9e24-5548610c24c2",
@@ -2118,6 +2067,37 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 7561,
+							atomicPriority = true,
+							gVar = "ACR_RikuPCT3_CD",
+							ignoreWeaveRules = true,
+							uuid = "e10d1d58-5d1b-3a6f-9853-934aec945789",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 262.1,
+				name = "swiftcast",
+				timelineIndex = 46,
+				timerOffset = -3,
+				uuid = "0a15084e-1f82-6bc0-bbe9-ad847ccf660e",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							gVar = "ACR_RikuPCT3_CD",
 							gVarValue = 2,
@@ -2178,7 +2158,7 @@ local tbl =
 				uuid = "e7c67b49-55f0-7baf-94e5-694f7c05fcc9",
 				version = 2,
 			},
-			inheritedIndex = 12,
+			inheritedIndex = 13,
 		},
 		
 		{
@@ -2230,7 +2210,7 @@ local tbl =
 				uuid = "6b6d7834-f58a-05ac-9794-ad0411934914",
 				version = 2,
 			},
-			inheritedIndex = 10,
+			inheritedIndex = 11,
 		},
 		
 		{
@@ -3697,6 +3677,153 @@ local tbl =
 				enabled = false,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 34674,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"da5caf32-47dc-f72f-ac2c-65007296a9dc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							uuid = "cdc32dca-3147-cf67-8ce4-f0452501a9a1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34678,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"972ec562-3645-fc8a-89ea-4eec9dc134df",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "91f4fc71-35d1-7f93-92e9-71bf49221756",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34679,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"ccd62627-4026-7100-8f51-f537e2dc146f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "d1809dd0-04ff-07cb-960c-6d6b8f031f78",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34680,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"87d3b5bd-0e04-88b7-b633-4d5348fed097",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							targetType = "Current Target",
+							uuid = "f15dafc8-522f-828b-8e61-60c96d7dc584",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 60,
+							actionID = 34674,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "hammer cd <= 60",
+							uuid = "da5caf32-47dc-f72f-ac2c-65007296a9dc",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 3)",
+							name = "hammer buff 3",
+							uuid = "972ec562-3645-fc8a-89ea-4eec9dc134df",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 2)",
+							name = "hammer buff 2",
+							uuid = "ccd62627-4026-7100-8f51-f537e2dc146f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local buff = TensorCore.getBuff(TensorCore.mGetPlayer(), 3680)\nreturn (buff and buff.stacks == 1)",
+							name = "hammer buff 1",
+							uuid = "87d3b5bd-0e04-88b7-b633-4d5348fed097",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 533.5,
+				name = "burn hammer",
+				timeRange = true,
+				timelineIndex = 89,
+				timerEndOffset = 12.60000038147,
+				uuid = "67a8dbb0-6eba-9239-8dec-2d3eac652d73",
+				version = 2,
+			},
+		},
 	},
 	[91] = 
 	{
@@ -3802,17 +3929,34 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"04738370-c525-1a8d-8d13-25cc352610ac",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Motifs",
 							gVarValue = 2,
 							uuid = "ba068b1d-e4ba-7ed2-9326-3fd796dd02b6",
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 					
 					{
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"04738370-c525-1a8d-8d13-25cc352610ac",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_StarrySkyMotif",
 							gVarValue = 2,
 							uuid = "f3ab8240-528d-92c4-b164-4c02b1a8c561",
@@ -3823,10 +3967,23 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 3685,
+							category = "Self",
+							name = "120 begin",
+							uuid = "04738370-c525-1a8d-8d13-25cc352610ac",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 550.1,
-				name = "motifs off",
+				name = "120 begin",
+				timeRange = true,
 				timelineIndex = 91,
+				timerEndOffset = 10.10000038147,
 				uuid = "e628ab52-af2b-093b-a036-fe7b9f7c1158",
 				version = 2,
 			},
@@ -5720,6 +5877,16 @@ local tbl =
 						},
 						inheritedIndex = 1,
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldAOE",
+							uuid = "ee36203c-ac56-0e63-a67a-8f8b6e729617",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -5961,22 +6128,63 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ddaa019b-e69d-f020-87cf-e0ed6637a0ea",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Motifs",
 							gVarValue = 2,
-							uuid = "6dd17a9e-140d-88ca-8690-33261fab91a7",
+							uuid = "af2e61c7-1cd5-4b98-b349-15198a20f89e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ddaa019b-e69d-f020-87cf-e0ed6637a0ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_HoldAOE",
+							gVarValue = 2,
+							uuid = "60940edf-138e-861b-8bfd-1a92c74952d0",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 3685,
+							category = "Self",
+							name = "120 begin",
+							uuid = "ddaa019b-e69d-f020-87cf-e0ed6637a0ea",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 910.7,
-				name = "motifs off",
+				name = "120 begin",
+				timeRange = true,
 				timelineIndex = 188,
-				uuid = "5202ff24-8383-67bf-a19b-1c6792936c17",
+				timerEndOffset = 17.10000038147,
+				uuid = "46d2fc5e-ee4b-d816-a3c3-cfba8b18f85f",
 				version = 2,
 			},
+			inheritedIndex = 8,
 		},
 	},
 	[189] = 
@@ -6233,27 +6441,6 @@ local tbl =
 							version = 2.1,
 						},
 					},
-					
-					{
-						data = 
-						{
-							actionID = 34676,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"519007ef-105f-2f2c-a236-07a53b0f27ea",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Current Target",
-							uuid = "406f763b-eb49-166b-a8d6-0638f00cf968",
-							version = 2.1,
-						},
-					},
 				},
 				conditions = 
 				{
@@ -6277,18 +6464,6 @@ local tbl =
 							lastSkillID = 34665,
 							name = "animal motif 2",
 							uuid = "66bd5ba1-b316-7e0e-a649-a0379e484273",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 5,
-							lastSkillID = 34671,
-							name = "animal2",
-							uuid = "519007ef-105f-2f2c-a236-07a53b0f27ea",
 							version = 2,
 						},
 					},
@@ -6391,8 +6566,8 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuPCT3_HoldPalette",
-							uuid = "3e92c7e7-6d13-4b42-8fc6-622ab565ceb9",
+							gVar = "ACR_RikuPCT3_HoldAOE",
+							uuid = "37823ffe-8fc9-5cde-b698-b682619be705",
 							version = 2.1,
 						},
 						inheritedIndex = 2,
@@ -6406,7 +6581,18 @@ local tbl =
 							uuid = "c08d9663-82fd-4230-a94a-2968e18f26e3",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							uuid = "902fe1af-2d2f-50cf-8d9d-ecc965d99edc",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
 					},
 					
 					{
@@ -6646,6 +6832,18 @@ local tbl =
 							uuid = "2ac80019-6668-f5fa-9181-0ee9c943c925",
 							version = 2.1,
 						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldAOE",
+							gVarValue = 2,
+							uuid = "a5b40b20-b37a-51fa-9f50-0e9d40fadf50",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
 					},
 					
 					{
@@ -7924,6 +8122,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"682d92de-5da8-77ae-9c32-1edf73763b52",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Burn",
 							uuid = "8208d9c5-7f65-bcbb-b143-2cd9611061ef",
 							version = 2.1,
@@ -7934,6 +8140,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"682d92de-5da8-77ae-9c32-1edf73763b52",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_HoldAOE",
 							gVarValue = 2,
 							uuid = "2b71ccb1-6bdc-250b-9732-4baa242f1237",
@@ -7944,11 +8158,23 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 3685,
+							category = "Self",
+							name = "120 begin",
+							uuid = "682d92de-5da8-77ae-9c32-1edf73763b52",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1421.9,
 				name = "burn",
+				timeRange = true,
 				timelineIndex = 281,
-				timerOffset = -20,
+				timerStartOffset = -30,
 				uuid = "9dd05825-a12f-7008-abe5-b583560b5916",
 				version = 2,
 			},
