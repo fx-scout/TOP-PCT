@@ -4335,27 +4335,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "Misc",
-							conditions = 
-							{
-								
-								{
-									"5dfb7e8f-5040-c59a-bb26-df242ffbb686",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							name = "untarget",
-							untarget = true,
-							uuid = "3d701b01-11de-2b52-aaed-521bfccf9db9",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -4369,7 +4348,33 @@ local tbl =
 							uuid = "50f5010e-f318-78b0-bd06-aeb6add93161",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"5dfb7e8f-5040-c59a-bb26-df242ffbb686",
+									true,
+								},
+								
+								{
+									"269d5159-98ed-9d8f-a389-6c65d1fa45e5",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							name = "untarget",
+							untarget = true,
+							uuid = "3d701b01-11de-2b52-aaed-521bfccf9db9",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -4403,6 +4408,18 @@ local tbl =
 							uuid = "5dfb7e8f-5040-c59a-bb26-df242ffbb686",
 							version = 2,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 3674,
+							category = "Self",
+							name = "black casting",
+							uuid = "269d5159-98ed-9d8f-a389-6c65d1fa45e5",
+							version = 2,
+						},
+						inheritedIndex = 2,
 					},
 					
 					{
@@ -4820,6 +4837,33 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				enabled = false,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_Motifs",
+							uuid = "f5325f97-3455-90c8-b446-34395bbd922e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 661.6,
+				name = "motifs on",
+				timelineIndex = 121,
+				uuid = "b52b0303-d3b0-8429-ba34-c432f1da500d",
+				version = 2,
 			},
 		},
 	},
@@ -6519,6 +6563,20 @@ local tbl =
 		{
 			data = 
 			{
+				name = "swiftcast",
+				uuid = "4032c188-2eb0-a027-b248-87891a96b464",
+				version = 2,
+			},
+			inheritedObjectUUID = "9e5e85f3-f0a1-911f-8c02-5aa43e13f664",
+			inheritedOverwrites = 
+			{
+				name = "swiftcast",
+			},
+		},
+		
+		{
+			data = 
+			{
 				name = "Precast Earlier",
 				uuid = "c0d9487b-dd03-e2e4-85ae-e62b55bb5a3d",
 				version = 2,
@@ -6601,29 +6659,10 @@ local tbl =
 							aType = "ACR",
 							gVar = "ACR_RikuPCT3_Motifs",
 							gVarValue = 2,
-							uuid = "79a014e2-3321-d3be-a35b-92eb38944443",
+							uuid = "c39d8e3a-3717-2822-9767-61542c2cde85",
 							version = 2.1,
 						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_MovementSwiftcast",
-							uuid = "d7c9ca83-7e88-6baa-84a8-e52af7dda2c9",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_OffensiveSwiftcast",
-							uuid = "e4d8523e-957e-e3d7-98c3-5362bf937843",
-							version = 2.1,
-						},
+						inheritedIndex = 5,
 					},
 				},
 				conditions = 
@@ -6653,7 +6692,17 @@ local tbl =
 							{
 								
 								{
-									"5dfb7e8f-5040-c59a-bb26-df242ffbb686",
+									"683b11ec-0ed2-7835-96ff-9780abbebd24",
+									true,
+								},
+								
+								{
+									"4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
+									true,
+								},
+								
+								{
+									"41cf4939-9615-edaa-a1c2-6c1e987e10f2",
 									true,
 								},
 							},
@@ -6670,35 +6719,18 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionID = 34665,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"5dfb7e8f-5040-c59a-bb26-df242ffbb686",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_HoldPalette",
-							uuid = "5ffb3daa-c030-b720-8338-b6efc373f78a",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"b78bc88e-d3d4-d991-8dec-83acb6874c39",
+									"7a251938-4ce5-dd6a-983e-7775afa67caf",
 									true,
 								},
 							},
 							gVar = "ACR_RikuPCT3_Motifs",
-							uuid = "1f7adbd0-25c4-8f10-99f1-43e753f4f9e6",
+							uuid = "260923bd-329a-a73f-b8aa-ed7e4ed3a554",
 							version = 2.1,
 						},
 					},
@@ -6713,7 +6745,32 @@ local tbl =
 							conditionType = 3,
 							hpValue = 20,
 							name = "hp < 20%",
-							uuid = "5dfb7e8f-5040-c59a-bb26-df242ffbb686",
+							uuid = "683b11ec-0ed2-7835-96ff-9780abbebd24",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeValue = 100,
+							name = "palette == 100",
+							uuid = "4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34651,
+							name = "green",
+							uuid = "41cf4939-9615-edaa-a1c2-6c1e987e10f2",
 							version = 2,
 						},
 					},
@@ -6724,7 +6781,7 @@ local tbl =
 							category = "Lua",
 							conditionLua = "return TensorCore.mGetTarget() == nil",
 							name = "no target",
-							uuid = "b78bc88e-d3d4-d991-8dec-83acb6874c39",
+							uuid = "7a251938-4ce5-dd6a-983e-7775afa67caf",
 							version = 2,
 						},
 					},
@@ -6733,12 +6790,117 @@ local tbl =
 				name = "hp < 20%",
 				timeRange = true,
 				timelineIndex = 206,
-				timerEndOffset = 35,
+				timerEndOffset = 32,
 				timerStartOffset = 5,
-				uuid = "352997c2-3653-31f4-9d78-6527f6609742",
+				uuid = "cdab722b-eb34-515e-b00f-bf1d380e7b69",
 				version = 2,
 			},
 			inheritedIndex = 11,
+		},
+	},
+	[210] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7561,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"bfe3e5e8-5290-87de-b8e7-529f9c76559c",
+									true,
+								},
+								
+								{
+									"fbbedd0d-f18a-078d-a961-42ead7bc6bc4",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							uuid = "f22bf451-8b8c-33e1-9da6-1e8b3ca3519d",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 34665,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"2cc5d48f-1a4b-1d9e-966e-06b8ab2e83aa",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_CD",
+							ignoreWeaveRules = true,
+							uuid = "b0c0d328-4926-642e-84f3-21f538a3b1e6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return TensorCore.mGetTarget() ~= nil",
+							name = "have target",
+							uuid = "bfe3e5e8-5290-87de-b8e7-529f9c76559c",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7561,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "swiftcast cd == 0",
+							uuid = "fbbedd0d-f18a-078d-a961-42ead7bc6bc4",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffID = 167,
+							category = "Self",
+							name = "swiftcast",
+							uuid = "2cc5d48f-1a4b-1d9e-966e-06b8ab2e83aa",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 998.5,
+				name = "swift animal motif 2",
+				timeRange = true,
+				timelineIndex = 210,
+				timerStartOffset = -4,
+				uuid = "1e303529-30cc-9e3a-a160-26885cf36ff0",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[211] = 
@@ -6891,28 +7053,6 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 5,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_MovementSwiftcast",
-							gVarValue = 2,
-							uuid = "d5b5660f-ee77-cc20-ba0b-835ba9a8ecda",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_OffensiveSwiftcast",
-							gVarValue = 2,
-							uuid = "f8c7356d-6716-35b9-ab81-35727e3e7038",
-							version = 2.1,
-						},
 					},
 				},
 				conditions = 
