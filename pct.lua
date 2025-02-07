@@ -643,6 +643,53 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 38,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local function drawQT(name, info)\n    GUI:Begin(\"Selection Damage Reduction GUI\", true,\n        GUI.WindowFlags_NoTitleBar +\n        GUI.WindowFlags_NoScrollbar +\n        GUI.WindowFlags_NoScrollWithMouse +\n        GUI.WindowFlags_NoCollapse +\n        GUI.WindowFlags_AlwaysAutoResize\n    )\n\n    -- 动态状态颜色\n    local ChildColor = info.bool and \n        {r=0, g=0.6, b=0, a=0.5} or  -- 启用（绿）\n        {r=0.1, g=0.1, b=0.1, a=0.5}   -- 禁用（红）\n\n    -- 子窗口样式\n    GUI:PushStyleVar(GUI.StyleVar_ChildWindowRounding, 5)\n    GUI:PushStyleVar(GUI.StyleVar_ItemSpacing, 3, 3)\n    GUI:PushStyleColor(GUI.Col_ChildWindowBg, ChildColor.r, ChildColor.g, ChildColor.b, ChildColor.a)\n\n    -- 按钮布局\n    local text_width = GUI:CalcTextSize(name)\n    GUI:BeginChild(name, 105, 30, false, GUI.WindowFlags_AlwaysAutoResize)\n    GUI:SetCursorPosX((105 - text_width) * 0.5)  -- 水平居中\n    GUI:SetCursorPosY((30 - GUI:GetTextLineHeightWithSpacing()) * 0.5) -- 垂直居中\n    GUI:Text(name)\n    GUI:EndChild()\n\n    -- 点击交互\n    if GUI:IsItemHovered() and GUI:IsMouseClicked(0) then\n        info.bool = not info.bool\n    end\n\n    -- 清理样式\n    GUI:PopStyleColor()\n    GUI:PopStyleVar(2)\n    GUI:End()\nend\n\n-- 初始化数据结构 (关键修改点)\nif data.string_SelectionDR == nil then\n    data.string_SelectionDR = {\n        [\"d4绘制\"] = {bool = false},\n        [\"自动lb\"] = {bool = false},\n\t\t[\"开场二挡昏乱\"] = {bool = false},\n\t\t[\"一挡陨石昏乱\"] = {bool = false},\n\t\t[\"双龙炎昏乱\"] = {bool = false}\n\t\t-- 想要加入自己的按钮的话 格式如下\n\t\t-- [\"你想控制的QT名字\"] = {bool = false},比如[\"我先牵制\"] = {bool = false},\n\t\t-- 更改完必须reload lua\n\t\t-- 想要在不同的图有不同的QT 自己复制一份并且使用map id为条件 默认自带的1238为绝伊甸ID 为了保证你拿到有效果所以没有连接mapid 自行加入\n    }\nend\n\n-- 绘制所有按钮\nfor btnName, config in pairs(data.string_SelectionDR) do\n    drawQT(btnName, config)\nend\n\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"d7639ee6-2ad7-c959-9a5f-a25b024cb7d3",
+								true,
+							},
+						},
+						gVar = "ACR_RikuDRK3_CD",
+						uuid = "f4ac6155-32fd-cde8-8acb-77c8d18f8454",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						localmapid = 1122,
+						name = "top map",
+						uuid = "d7639ee6-2ad7-c959-9a5f-a25b024cb7d3",
+						version = 2,
+					},
+				},
+			},
+			eventType = 13,
+			name = "top gui",
+			uuid = "23e916a6-e779-7a29-9490-89b63596a12c",
+			version = 2,
+		},
 	}, 
 	inheritedProfiles = 
 	{

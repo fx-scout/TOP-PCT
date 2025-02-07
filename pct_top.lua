@@ -1392,14 +1392,34 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(10000, 100, 0, 100, math.pi*9/16, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"b1b9b70b-dc49-fc4b-b8cf-1ddae85c8bde",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "b1b9b70b-dc49-fc4b-b8cf-1ddae85c8bde",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 108,
 				name = "draw d4 dir",
@@ -3295,6 +3315,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(7000, 100, 0, 100, math.pi*3/4, 8, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"d38ba4f7-6f75-26e6-8b42-3767cd6e932c",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -3303,6 +3331,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "d38ba4f7-6f75-26e6-8b42-3767cd6e932c",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 432.3,
 				name = "draw d4 dir",
@@ -4456,6 +4495,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(10000, 100, 0, 100, math.pi/2, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"02fc0ecd-7076-b0d4-86bd-df7e2c4143b9",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -4465,6 +4512,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "02fc0ecd-7076-b0d4-86bd-df7e2c4143b9",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 607.1,
 				name = "draw d4 dir",
@@ -4516,6 +4574,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(4500, 100, 0, 100, math.pi/2, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"1e0af8f8-c403-d4f7-92e8-0b1ba217aa0e",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -4524,6 +4590,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "1e0af8f8-c403-d4f7-92e8-0b1ba217aa0e",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 627,
 				name = "draw d4 dir",
@@ -4645,6 +4722,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(4800, 100, 0, 100, math.pi/2, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"beacaf6a-9b1a-f362-9701-677ceeb7b67e",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -4653,6 +4738,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "beacaf6a-9b1a-f362-9701-677ceeb7b67e",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 636.8,
 				name = "draw d4 dir",
@@ -7113,6 +7209,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b1665a57-6828-823d-8312-aec0614c673c",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -7122,6 +7226,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"开场二挡昏乱\"].bool",
+							name = "开场二挡昏乱",
+							uuid = "b1665a57-6828-823d-8312-aec0614c673c",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1167.8,
 				name = "addle",
@@ -7276,6 +7391,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e0afbbc0-1a25-3cad-9290-0d0edbc13d4b",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -7285,8 +7408,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"双龙炎昏乱\"].bool",
+							name = "双龙炎昏乱",
+							uuid = "e0afbbc0-1a25-3cad-9290-0d0edbc13d4b",
+							version = 2,
+						},
+					},
 				},
-				enabled = false,
 				mechanicTime = 1199.3,
 				name = "addle",
 				timelineIndex = 221,
@@ -7420,6 +7553,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(7000, 100, 0, 100, math.pi*3/4, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"b91076ea-3c38-b9c8-bb24-f5c5571fbf28",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -7428,6 +7569,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "b91076ea-3c38-b9c8-bb24-f5c5571fbf28",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1236,
 				name = "draw d4 dir",
@@ -7494,6 +7646,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"769c10d9-27f7-8bdd-b05a-591bd0084e4a",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -7503,8 +7663,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"一挡陨石昏乱\"].bool",
+							name = "一挡陨石昏乱",
+							uuid = "769c10d9-27f7-8bdd-b05a-591bd0084e4a",
+							version = 2,
+						},
+					},
 				},
-				enabled = false,
 				mechanicTime = 1244.3,
 				name = "addle",
 				timelineIndex = 237,
@@ -7585,6 +7755,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(6200, 100, 0, 100, math.pi*3/4, 11, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"59da847b-b646-4108-ac14-0f467ad67365",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -7593,6 +7771,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "59da847b-b646-4108-ac14-0f467ad67365",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1258.7,
 				name = "draw d4 dir",
@@ -7658,6 +7847,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e20fbcbc-6da9-4bce-9d2c-2f95b80d90dc",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -7667,6 +7864,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"开场二挡昏乱\"].bool",
+							name = "开场二挡昏乱",
+							uuid = "e20fbcbc-6da9-4bce-9d2c-2f95b80d90dc",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1278.2,
 				name = "addle",
@@ -7928,6 +8136,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"60cd1152-3172-0ee9-8002-2f9f5523a231",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -7937,8 +8153,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"双龙炎昏乱\"].bool",
+							name = "双龙炎昏乱",
+							uuid = "60cd1152-3172-0ee9-8002-2f9f5523a231",
+							version = 2,
+						},
+					},
 				},
-				enabled = false,
 				mechanicTime = 1312.4,
 				name = "addle",
 				timelineIndex = 259,
@@ -8009,6 +8235,11 @@ local tbl =
 							{
 								
 								{
+									"7fdc7363-fb87-162a-b6bb-6dd6a545b29c",
+									true,
+								},
+								
+								{
 									"16e1b383-d3c9-fbc8-95d9-1092352fb6e7",
 									true,
 								},
@@ -8023,6 +8254,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"自动lb\"].bool",
+							name = "自动lb",
+							uuid = "7fdc7363-fb87-162a-b6bb-6dd6a545b29c",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
 					
 					{
 						data = 
@@ -8060,6 +8303,14 @@ local tbl =
 						{
 							aType = "Lua",
 							actionLua = "local drawer = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0/255, 255/255, 0/255, 0.3),2)\ndrawer:addTimedArrow(10000, 100, 0, 100, math.pi*3/4, 12, 1)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"348313c4-8121-9a2e-a24b-1289a4bb168d",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_CD",
 							uuid = "49da45d2-4e96-09d4-ae1d-cad22547623f",
 							version = 2.1,
@@ -8068,6 +8319,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"d4绘制\"].bool",
+							name = "d4绘制",
+							uuid = "348313c4-8121-9a2e-a24b-1289a4bb168d",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 1335.6,
 				name = "draw d4 dir",
@@ -8164,6 +8426,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ba725e54-4878-b389-aee7-9c3168fa807e",
+									true,
+								},
+							},
 							gVar = "ACR_RikuPCT3_Hotbar_Addle",
 							uuid = "26e4470f-97e3-d67d-a61a-7989797f92ce",
 							variableTogglesType = 2,
@@ -8173,8 +8443,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.string_SelectionDR[\"一挡陨石昏乱\"].bool",
+							name = "一挡陨石昏乱",
+							uuid = "ba725e54-4878-b389-aee7-9c3168fa807e",
+							version = 2,
+						},
+					},
 				},
-				enabled = false,
 				mechanicTime = 1354.7,
 				name = "addle",
 				timelineIndex = 272,
