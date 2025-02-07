@@ -6700,11 +6700,6 @@ local tbl =
 									"4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
 									true,
 								},
-								
-								{
-									"41cf4939-9615-edaa-a1c2-6c1e987e10f2",
-									true,
-								},
 							},
 							gVar = "ACR_RikuPCT3_CD",
 							name = "untarget",
@@ -6759,18 +6754,6 @@ local tbl =
 							gaugeValue = 100,
 							name = "palette == 100",
 							uuid = "4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 5,
-							lastSkillID = 34651,
-							name = "green",
-							uuid = "41cf4939-9615-edaa-a1c2-6c1e987e10f2",
 							version = 2,
 						},
 					},
