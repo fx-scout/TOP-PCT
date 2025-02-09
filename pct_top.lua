@@ -1722,7 +1722,7 @@ local tbl =
 							uuid = "5a65ba31-af54-1528-a92b-ec69520fdd79",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
+						inheritedIndex = 2,
 					},
 					
 					{
@@ -1763,6 +1763,17 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							uuid = "5736081a-8071-dab2-82c0-d7c3a36d36a4",
+							version = 2,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuPCT3_Motifs",
 							gVarValue = 2,
 							uuid = "f40833a1-b43c-4020-af3d-43ed4786875e",
@@ -1787,7 +1798,7 @@ local tbl =
 				mechanicTime = 202.3,
 				name = "init p2_1",
 				timelineIndex = 31,
-				timerOffset = -2,
+				timerOffset = -1.6000000238419,
 				uuid = "1510a0c9-1299-50c7-b7a9-35fdfa2ccb8d",
 				version = 2,
 			},
@@ -2136,6 +2147,18 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							gVarValue = 2,
+							uuid = "87fc063e-0044-b247-ab66-5c492cf61368",
+							version = 2,
+						},
+						inheritedIndex = 3,
 					},
 					
 					{
@@ -8287,6 +8310,7 @@ local tbl =
 				uuid = "6d31e950-a78a-2518-ad54-367630228728",
 				version = 2,
 			},
+			inheritedIndex = 2,
 		},
 	},
 	[266] = 
