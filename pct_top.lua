@@ -29,7 +29,7 @@ local tbl =
 							inheritedObjectUUID = "bdd2bbc8-bd74-06ee-825b-d7a7a91e5f14",
 							inheritedOverwrites = 
 							{
-								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 22 -- 钐镰客\ndata.TopJobOrder[22] = 26 -- 龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 3 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
+								actionLua = "data.TopJobOrder = {}\n-- 如果需要调整优先级，请修改后面数字\n-- H1\ndata.TopJobOrder[24] = 1 -- 占星\ndata.TopJobOrder[33] = 2 -- 白魔\n\n-- Tank\ndata.TopJobOrder[21] = 10 -- 战士\ndata.TopJobOrder[32] = 11 -- 黑骑\ndata.TopJobOrder[37] = 12 -- 绝枪\ndata.TopJobOrder[19] = 13 -- 骑士\n\n-- 近战\ndata.TopJobOrder[34] = 20 -- 武士\ndata.TopJobOrder[20] = 21 -- 武僧\ndata.TopJobOrder[39] = 27 -- 钐镰客\ndata.TopJobOrder[22] = 26 -- 龙骑士\ndata.TopJobOrder[30] = 24 -- 忍者\ndata.TopJobOrder[41] = 25 -- 蝰蛇\n\n-- 远敏\ndata.TopJobOrder[31] = 30 -- 机工\ndata.TopJobOrder[23] = 31 -- 诗人\ndata.TopJobOrder[28] = 32 -- 舞者\n\n--法系\ndata.TopJobOrder[42] = 40 -- 画家\ndata.TopJobOrder[25] = 41 -- 黑魔\ndata.TopJobOrder[35] = 42 -- 召唤\ndata.TopJobOrder[27] = 43 -- 赤魔\n\n-- H2 \ndata.TopJobOrder[40] = 3 -- 贤者\ndata.TopJobOrder[28] = 51 -- 学者\n\nself.used = true",
 							},
 						},
 					},
@@ -1323,6 +1323,16 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldHammer",
+							uuid = "82337d93-9ba7-1cfe-a60a-87ff6baebf62",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -1765,9 +1775,21 @@ local tbl =
 							aType = "ACR",
 							gVar = "ACR_RikuPCT3_HoldPalette",
 							uuid = "5736081a-8071-dab2-82c0-d7c3a36d36a4",
-							version = 2,
+							version = 2.1,
 						},
 						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldHammer",
+							gVarValue = 2,
+							uuid = "df98ae24-542d-e7f9-8c48-55e1e2c44d13",
+							version = 2.1,
+						},
+						inheritedIndex = 7,
 					},
 					
 					{
@@ -2156,7 +2178,7 @@ local tbl =
 							gVar = "ACR_RikuPCT3_HoldPalette",
 							gVarValue = 2,
 							uuid = "87fc063e-0044-b247-ab66-5c492cf61368",
-							version = 2,
+							version = 2.1,
 						},
 						inheritedIndex = 3,
 					},
@@ -6771,18 +6793,6 @@ local tbl =
 						},
 						inheritedIndex = 4,
 					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_Motifs",
-							gVarValue = 2,
-							uuid = "c39d8e3a-3717-2822-9767-61542c2cde85",
-							version = 2.1,
-						},
-						inheritedIndex = 5,
-					},
 				},
 				conditions = 
 				{
@@ -6795,214 +6805,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							conditions = 
-							{
-								
-								{
-									"683b11ec-0ed2-7835-96ff-9780abbebd24",
-									true,
-								},
-								
-								{
-									"4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							name = "untarget",
-							untarget = true,
-							uuid = "3d701b01-11de-2b52-aaed-521bfccf9db9",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 34665,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"7a251938-4ce5-dd6a-983e-7775afa67caf",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_Motifs",
-							uuid = "260923bd-329a-a73f-b8aa-ed7e4ed3a554",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 20,
-							name = "hp < 20%",
-							uuid = "683b11ec-0ed2-7835-96ff-9780abbebd24",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeValue = 100,
-							name = "palette == 100",
-							uuid = "4afbcd29-0c27-0da2-84c7-6c34b6eae6ad",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return TensorCore.mGetTarget() == nil",
-							name = "no target",
-							uuid = "7a251938-4ce5-dd6a-983e-7775afa67caf",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 967.7,
-				name = "hp < 20%",
-				timeRange = true,
-				timelineIndex = 206,
-				timerEndOffset = 32,
-				timerStartOffset = 5,
-				uuid = "cdab722b-eb34-515e-b00f-bf1d380e7b69",
-				version = 2,
-			},
-			inheritedIndex = 11,
-		},
-	},
-	[210] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7561,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"bfe3e5e8-5290-87de-b8e7-529f9c76559c",
-									true,
-								},
-								
-								{
-									"fbbedd0d-f18a-078d-a961-42ead7bc6bc4",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							uuid = "f22bf451-8b8c-33e1-9da6-1e8b3ca3519d",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							actionID = 34665,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"2cc5d48f-1a4b-1d9e-966e-06b8ab2e83aa",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPCT3_CD",
-							ignoreWeaveRules = true,
-							uuid = "b0c0d328-4926-642e-84f3-21f538a3b1e6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return TensorCore.mGetTarget() ~= nil",
-							name = "have target",
-							uuid = "bfe3e5e8-5290-87de-b8e7-529f9c76559c",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							actionID = 7561,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "swiftcast cd == 0",
-							uuid = "fbbedd0d-f18a-078d-a961-42ead7bc6bc4",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							buffID = 167,
-							category = "Self",
-							name = "swiftcast",
-							uuid = "2cc5d48f-1a4b-1d9e-966e-06b8ab2e83aa",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 998.5,
-				name = "swift animal motif 2",
-				timeRange = true,
-				timelineIndex = 210,
-				timerStartOffset = -4,
-				uuid = "1e303529-30cc-9e3a-a160-26885cf36ff0",
-				version = 2,
-			},
-			inheritedIndex = 6,
 		},
 	},
 	[211] = 
@@ -7082,7 +6884,7 @@ local tbl =
 							atomicPriority = true,
 							gVar = "ACR_RikuPCT3_CD",
 							ignoreWeaveRules = true,
-							uuid = "3ec319e7-291a-2fb9-94bf-ce183187e493",
+							uuid = "71b950de-036f-398e-8851-7b2269719c08",
 							version = 2.1,
 						},
 						inheritedIndex = 1,
@@ -7163,7 +6965,7 @@ local tbl =
 				mechanicTime = 1154.7,
 				name = "init p6",
 				timelineIndex = 213,
-				timerOffset = -5,
+				timerOffset = -3,
 				uuid = "abc96e2c-b7b0-ba4e-a3ea-06be169492e8",
 				version = 2,
 			},
@@ -7558,6 +7360,33 @@ local tbl =
 				timelineIndex = 228,
 				timerEndOffset = 9.5,
 				uuid = "ca54164b-0200-b33d-a694-ebe0d79a7146",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							uuid = "0ee641ca-5d4d-fa21-99da-9e4c03a9cfb4",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1223.4,
+				name = "hold palette on",
+				timelineIndex = 228,
+				uuid = "ae25e967-e7c9-e01a-87c2-ac503801ea12",
 				version = 2,
 			},
 		},
@@ -8073,6 +7902,34 @@ local tbl =
 			},
 			inheritedIndex = 8,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							gVarValue = 2,
+							uuid = "0ee641ca-5d4d-fa21-99da-9e4c03a9cfb4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1278.2,
+				name = "hold palette off",
+				timelineIndex = 246,
+				uuid = "3864eb72-8d89-f656-a994-09412c5f73d9",
+				version = 2,
+			},
+		},
 	},
 	[257] = 
 	{
@@ -8561,6 +8418,26 @@ local tbl =
 							uuid = "8208d9c5-7f65-bcbb-b143-2cd9611061ef",
 							version = 2.1,
 						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"682d92de-5da8-77ae-9c32-1edf73763b52",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_Motifs",
+							gVarValue = 2,
+							uuid = "44e9caf9-fc6b-4517-96a2-b7e0c6f81306",
+							version = 2,
+						},
+						inheritedIndex = 2,
 					},
 					
 					{
