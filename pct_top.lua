@@ -5382,18 +5382,17 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 7561,
-							atomicPriority = true,
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"8f87148e-5a94-615d-b064-84aee2a10bf4",
+									"9fcb03ce-fcae-0026-83e2-b9488bc92e0f",
 									true,
 								},
 							},
-							gVar = "ACR_RikuPCT3_CD",
-							uuid = "e10d1d58-5d1b-3a6f-9853-934aec945789",
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							uuid = "0a69a4f6-25cc-5ee7-81d8-3e54aef471aa",
 							version = 2.1,
 						},
 					},
@@ -5404,24 +5403,121 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 7561,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "swiftcast cd == 0",
-							uuid = "8f87148e-5a94-615d-b064-84aee2a10bf4",
+							channelCheckSpellID = 34652,
+							conditionType = 10,
+							name = "读条蓝",
+							uuid = "6d5f1966-1f5d-9903-92ea-d1ead49c7fee",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							channelCheckSpellID = 34655,
+							conditionType = 10,
+							name = "读条品红",
+							uuid = "a8f91b6a-dcf3-4e52-a8d0-764d0844e9d2",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34652,
+							name = "读完蓝",
+							uuid = "8fea3f4c-c64d-c4a7-a833-89db2e8e9218",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34655,
+							name = "读完品红",
+							uuid = "7df186f5-6624-58e3-9ff9-18261a81ff71",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							conditions = 
+							{
+								
+								{
+									"6d5f1966-1f5d-9903-92ea-d1ead49c7fee",
+									true,
+								},
+								
+								{
+									"a8f91b6a-dcf3-4e52-a8d0-764d0844e9d2",
+									true,
+								},
+								
+								{
+									"8fea3f4c-c64d-c4a7-a833-89db2e8e9218",
+									true,
+								},
+								
+								{
+									"7df186f5-6624-58e3-9ff9-18261a81ff71",
+									true,
+								},
+							},
+							matchAnyBuff = true,
+							name = "读条或读完",
+							uuid = "9fcb03ce-fcae-0026-83e2-b9488bc92e0f",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 743,
-				name = "swiftcast",
+				name = "burn holy on",
+				timeRange = true,
 				timelineIndex = 131,
-				timerOffset = -3,
-				uuid = "47ccd6af-e440-7952-bd5b-968c2e03f558",
+				timerStartOffset = -7.5,
+				uuid = "6239119e-d8f8-e756-867a-55caa0fd2043",
 				version = 2,
 			},
-			inheritedIndex = 11,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							gVarValue = 2,
+							uuid = "38fcdc5d-0a1e-94ff-9290-2d3ad2ecd97d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 743,
+				name = "burn holy off",
+				timelineIndex = 131,
+				uuid = "e1785bc3-0b6d-8323-a9b4-109d99227528",
+				version = 2,
+			},
 		},
 		
 		{
@@ -5449,6 +5545,7 @@ local tbl =
 				uuid = "1cadc42a-2cfd-496e-8c18-d5466db8aa8a",
 				version = 2,
 			},
+			inheritedIndex = 11,
 		},
 	},
 	[134] = 
@@ -5834,6 +5931,155 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9fcb03ce-fcae-0026-83e2-b9488bc92e0f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							uuid = "0a69a4f6-25cc-5ee7-81d8-3e54aef471aa",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							channelCheckSpellID = 34652,
+							conditionType = 10,
+							name = "读条蓝",
+							uuid = "6d5f1966-1f5d-9903-92ea-d1ead49c7fee",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							channelCheckSpellID = 34655,
+							conditionType = 10,
+							name = "读条品红",
+							uuid = "a8f91b6a-dcf3-4e52-a8d0-764d0844e9d2",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34652,
+							name = "读完蓝",
+							uuid = "8fea3f4c-c64d-c4a7-a833-89db2e8e9218",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 5,
+							lastSkillID = 34655,
+							name = "读完品红",
+							uuid = "7df186f5-6624-58e3-9ff9-18261a81ff71",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							conditions = 
+							{
+								
+								{
+									"6d5f1966-1f5d-9903-92ea-d1ead49c7fee",
+									true,
+								},
+								
+								{
+									"a8f91b6a-dcf3-4e52-a8d0-764d0844e9d2",
+									true,
+								},
+								
+								{
+									"8fea3f4c-c64d-c4a7-a833-89db2e8e9218",
+									true,
+								},
+								
+								{
+									"7df186f5-6624-58e3-9ff9-18261a81ff71",
+									true,
+								},
+							},
+							matchAnyBuff = true,
+							name = "读条或读完",
+							uuid = "9fcb03ce-fcae-0026-83e2-b9488bc92e0f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 824.7,
+				name = "burn holy on",
+				timeRange = true,
+				timelineIndex = 161,
+				timerStartOffset = -7.5,
+				uuid = "d9ec7f87-023b-be26-b192-caf1903f92fb",
+				version = 2,
+			},
+			inheritedIndex = 10,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							gVarValue = 2,
+							uuid = "38fcdc5d-0a1e-94ff-9290-2d3ad2ecd97d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 824.7,
+				name = "burn holy off",
+				timelineIndex = 161,
+				uuid = "0dafc3d5-e0fc-d4de-86bb-3e414f309ff6",
+				version = 2,
+			},
+			inheritedIndex = 11,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 7561,
 							atomicPriority = true,
 							gVar = "ACR_RikuPCT3_CD",
@@ -5852,7 +6098,7 @@ local tbl =
 				uuid = "bb107a24-818f-5a7f-a16b-f81fc0039f3d",
 				version = 2,
 			},
-			inheritedIndex = 10,
+			inheritedIndex = 12,
 		},
 		
 		{
@@ -5936,7 +6182,7 @@ local tbl =
 				uuid = "702cc6e2-9b38-ed83-8430-953310fa7acb",
 				version = 2,
 			},
-			inheritedIndex = 11,
+			inheritedIndex = 13,
 		},
 		
 		{
@@ -5964,7 +6210,7 @@ local tbl =
 				uuid = "0d5aed09-a551-0070-b34a-ee9c242973a0",
 				version = 2,
 			},
-			inheritedIndex = 12,
+			inheritedIndex = 14,
 		},
 	},
 	[181] = 
@@ -6547,7 +6793,87 @@ local tbl =
 				uuid = "3a04a6a7-eb6c-5219-a189-67f536b6cc70",
 				version = 2,
 			},
-			inheritedIndex = 7,
+			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52f35204-5d13-1eab-9d43-f094e4b1122f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							uuid = "0a69a4f6-25cc-5ee7-81d8-3e54aef471aa",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3685,
+							category = "Self",
+							name = "120 end",
+							uuid = "52f35204-5d13-1eab-9d43-f094e4b1122f",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 935.6,
+				name = "burn holy on",
+				timeRange = true,
+				timelineIndex = 191,
+				timerStartOffset = -10,
+				uuid = "f8f33891-ea7b-aa4f-84c1-ac0c372691c0",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_BurnHoly",
+							gVarValue = 2,
+							uuid = "38fcdc5d-0a1e-94ff-9290-2d3ad2ecd97d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 935.6,
+				name = "burn holy off",
+				timelineIndex = 191,
+				uuid = "7778533c-02bd-1ca3-894d-01362a1ac2b0",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -6577,7 +6903,7 @@ local tbl =
 				uuid = "4aabe156-5b58-0222-bf5c-1b32af5f87c6",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 7,
 		},
 		
 		{
@@ -6661,7 +6987,7 @@ local tbl =
 				uuid = "209b3205-be01-2dd5-bdfe-13150b294eb1",
 				version = 2,
 			},
-			inheritedIndex = 6,
+			inheritedIndex = 8,
 		},
 	},
 	[197] = 
@@ -7376,7 +7702,7 @@ local tbl =
 							aType = "ACR",
 							gVar = "ACR_RikuPCT3_HoldPalette",
 							uuid = "0ee641ca-5d4d-fa21-99da-9e4c03a9cfb4",
-							version = 2,
+							version = 2.1,
 						},
 					},
 				},
@@ -7827,6 +8153,34 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							gVar = "ACR_RikuPCT3_HoldPalette",
+							gVarValue = 2,
+							uuid = "0ee641ca-5d4d-fa21-99da-9e4c03a9cfb4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1278.2,
+				name = "hold palette off",
+				timelineIndex = 246,
+				uuid = "3864eb72-8d89-f656-a994-09412c5f73d9",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 7561,
 							atomicPriority = true,
 							conditions = 
@@ -7901,34 +8255,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 8,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPCT3_HoldPalette",
-							gVarValue = 2,
-							uuid = "0ee641ca-5d4d-fa21-99da-9e4c03a9cfb4",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1278.2,
-				name = "hold palette off",
-				timelineIndex = 246,
-				uuid = "3864eb72-8d89-f656-a994-09412c5f73d9",
-				version = 2,
-			},
 		},
 	},
 	[257] = 
@@ -8435,7 +8761,7 @@ local tbl =
 							gVar = "ACR_RikuPCT3_Motifs",
 							gVarValue = 2,
 							uuid = "44e9caf9-fc6b-4517-96a2-b7e0c6f81306",
-							version = 2,
+							version = 2.1,
 						},
 						inheritedIndex = 2,
 					},
